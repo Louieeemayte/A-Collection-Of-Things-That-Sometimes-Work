@@ -6,3 +6,20 @@ Requires access to a named pipe to successfully exploit however don't feel the n
 Always remember to set up handlers kids ! **use exploit/multi/handler/**
 
 If you get import errors you're probably missing impacket ! **pip install impacket**
+
+**Exploitable On:**
+- Windows 2016 x64
+- Windows 10 Pro Build 10240 x64
+- Windows 2012 R2 x64
+- Windows 8.1 x64
+- Windows 2008 R2 SP1 x64
+- Windows 7 SP1 x64
+- Windows 2008 SP1 x64
+- Windows 2003 R2 SP2 x64
+- Windows XP SP2 x64
+- Windows 8.1 x86
+- Windows 7 SP1 x86
+- Windows 2008 SP1 x86
+- Windows 2003 SP2 x86
+- Windows XP SP3 x86
+- Windows 2000 SP4 x86
