@@ -9,6 +9,7 @@ For some reason this ancient attack technique is still present within some older
 Tested on SCO OpenServer 6, however the printbook.cgi is still present within newer versions of OpenServer so im'a guess that the issue is still present. OpenServer is a little weird, its a unix based OS but dont expect most of the usual shells/tools to work.
 
 Theres no official patch on fixing this however if you disable the DocView function you should be good.
+
 ![RCE Against SCO-OpenServer6](https://i.imgur.com/pzCZS3M.png)
 
 Affected parameter and URL decoded payload:
