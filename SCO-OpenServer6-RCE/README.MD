@@ -3,7 +3,7 @@
 **Responsible Disclosure Was Attempted.**
 
 
-It was discovered that the printbook functionality within the DocView CGI library was vulnerable to a pipe parameter bypass, allowing an attacked to execute arbitrary system commands.
+It was discovered that the printbook functionality within the DocView CGI library was vulnerable to a pipe parameter bypass, allowing an attacker to execute arbitrary system commands.
 For some reason this ancient attack technique is still present within some older operating systems.
 
 Tested on SCO OpenServer 6, however the printbook.cgi is still present within newer versions of OpenServer so im'a guess that the issue is still present. OpenServer is a little weird, its a unix based OS but dont expect most of the usual shells/tools to work.
