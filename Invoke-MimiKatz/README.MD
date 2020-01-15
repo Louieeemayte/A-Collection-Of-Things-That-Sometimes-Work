@@ -1,6 +1,6 @@
 # Invoke-Mimikatz.ps1
 
-So basically unless you have bleeding edge powersploit right now, then Reflective Mimikatz wont work on **Windows 10**, however with a little change to the 'Get-ProcAddress' function you can get it working. Basically within Windows 10 the function now takes two arguments ^.\^
+So unless you have bleeding edge powersploit right now, then Reflective Mimikatz wont work on **Windows 10**, however with a little change to the 'Get-ProcAddress' function you can get it working. Basically within Windows 10 the function now takes two arguments ^.\^
 > Here's the function change if you want to add it into any of your own scripts.
 
     Function Get-ProcAddress
